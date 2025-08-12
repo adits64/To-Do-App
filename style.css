@@ -17,7 +17,6 @@
     margin:100px auto 20px;
     padding:40px 30px 70px;
     border-radius: 10px;
-
 }
 .todo-app h2{
     color:#002765;
@@ -55,7 +54,6 @@ button{
      font-size: 16px;
      cursor: pointer;
      border-radius: 40px;
-
 }
 ul li {
     list-style: none;
@@ -100,5 +98,65 @@ ul li span {
 }
 ul li span:hover{
     background:#edeef0;
+}
 
+/* Mobile Responsive Styles */
+@media screen and (max-width: 600px) {
+    .todo-app {
+        margin: 50px auto 20px;
+        padding: 20px 15px 50px;
+    }
+    
+    .row {
+        flex-direction: column;
+        background: transparent;
+        padding-left: 0;
+    }
+    
+    input {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        background: #edeef0;
+        border-radius: 30px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    ul li {
+        padding: 12px 30px 12px 40px;
+        font-size: 16px;
+    }
+    
+    ul li::before {
+        height: 24px;
+        width: 24px;
+    }
+    
+    ul li span {
+        right: 5px;
+        top: 5px;
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .todo-app {
+        padding: 15px 10px 40px;
+    }
+    
+    .todo-app h2 {
+        font-size: 20px;
+    }
+    
+    ul li {
+        font-size: 15px;
+        padding: 10px 25px 10px 35px;
+    }
 }
